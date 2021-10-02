@@ -1,6 +1,10 @@
-.test{
+.card{
     width:200px;
 }
 img{
     width:100%;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
 }
