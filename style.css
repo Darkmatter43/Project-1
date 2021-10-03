@@ -3,6 +3,10 @@
     flex-direction: column;
     align-items: center;
 }
+.form{
+    display: flex;
+    justify-content: center;
+}
 .pokemon{
     display: flex;
     flex-wrap:wrap;
