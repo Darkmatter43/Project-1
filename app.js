@@ -18,6 +18,11 @@ const generateMon =(data)=>{
         $('.test').text(data.name)
         $('.modal').css('display','block')
         $('.modal-img').attr('src',monImg).attr('alt',data.name)
+        $('.types').empty()
+        for (let i=0;i<data.types.length;i++){
+            $('.types').append($('<h1>').text(data.types[i].type.name))
+        }
+        // console.log(data.types.length);
     })
 }
 $(()=>{
@@ -27,6 +32,7 @@ $(()=>{
     //event listener set up on load for submit form - user input pokemon listener
     $('form').on('submit',(e)=>{
         e.preventDefault()
+        $('.pokemon').empty()
         userMon = $('input[type="text"]').val()
 
         //pass user input through tot he API to pull out the pokemon requested
