@@ -13,7 +13,10 @@ const generateMon =(data)=>{
     $('<h1>').text(data.id+': ').appendTo($infoDiv)
     $('<h1>').text(data.name).appendTo($infoDiv)
 
-    
+    //set up event listeners on each card - on click display modal with more information!
+    $($newCard).on('click',(e)=>{
+        $('.modal').css('display','flex')
+    })
 }
 $(()=>{
     //event listener set up on load for submit form - user input pokemon listener

@@ -45,4 +45,13 @@ img{
     width:100%;
     z-index: 1;
     color:white;
+    display:none;
+}
+.modal-info{
+    background-color: white;
+    height: 400px;
+    width:400px;
+    color:black;
+    border-radius:20px;
+    margin:300px auto;
 }
