@@ -15,10 +15,15 @@ const generateMon =(data)=>{
 
     //set up event listeners on each card - on click display modal with more information!
     $($newCard).on('click',(e)=>{
-        $('.modal').css('display','flex')
+        $('.test').text(data.name)
+        $('.modal').css('display','block')
+        $('.modal-img').attr('src',monImg).attr('alt',data.name)
     })
 }
 $(()=>{
+    $('#close').on("click",(e)=>{
+        $('.modal').css('display','none')
+    })
     //event listener set up on load for submit form - user input pokemon listener
     $('form').on('submit',(e)=>{
         e.preventDefault()
