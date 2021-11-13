@@ -1,7 +1,4 @@
 let userMon = 'charmander'
-
-// testing github on my mac
-
 //function that creates a card of the image of the pokemon as well as the small info panel below it - data is the pokemon object
 const generateMon =(data)=>{
     // const $newMon = $()
